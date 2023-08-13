@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>⛈️ Storm Runner</title>
+</head>
+<body>
+    <h2>⛈️ Storm Runner</h2>
+    <div class="flex-container">
+        <h1 class="title">Storm Runner</h1>
+        <h2 class="sub-title">the storm distance calculator</h2>
+        <p>Seconds between flash and thunder?</p>
+        <form id="form">
+            <input type="number" min="0" step="0.01" id="time">
+            <button type="submit" class="submit-button neon" name="themed">Submit</button>
+        </form>
+    </div>
+
+    <footer class="flex-footer">
+        <audio muted autoplay controls loop id="autoplay-audio">
+            <source src="rain.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+
+    <div class="content"></div>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="rain-1080p.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

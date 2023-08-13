@@ -1,0 +1,115 @@
+
+@font-face {
+    font-family: 'TrajanusRoman'; /* Choose a name for the font family */
+    src: url('TrajanusRoman-6aEq.otf') format('truetype'); /* TTF format */
+    /* Add more src lines for other formats (WOFF, WOFF2) if available */
+  }
+  
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    font-family: "TrajanusRoman", sans-serif;
+}
+
+.flex-footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    color: #FEB95F;
+    text-align: center;
+    font-family: "TrajanusRoman", sans-serif;
+    margin-top: 85px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    position: relative;
+    z-index: 2; 
+    color: #FEB95F;
+    font-family: "TrajanusRoman", sans-serif;
+}
+
+.sub-title {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    position: relative;
+    z-index: 2;
+    color: #FEB95F;
+    text-align: center;
+    font-family: "TrajanusRoman", sans-serif;
+    margin-top: 85px;
+    font-size: 25px;
+}
+
+form {
+    position: relative;
+    z-index: 2;
+}
+
+input {
+    height: 2rem;
+    width: 210px;
+    border: solid 2px #7A6C5D;
+    border-radius: 10px;
+    font-family: "TrajanusRoman", sans-serif;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: solid 2px #333;
+    border-radius: 10px;
+    font-family: "TrajanusRoman", sans-serif;
+    font-size: 16px;
+}
+
+audio {
+    z-index: 2;
+    width: 250px;
+    margin: 20px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #FBFEF9;
+  }
+
+.content {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.45);
+    color: #f1f1f1;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    z-index: 1;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
