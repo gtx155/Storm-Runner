@@ -11,3 +11,16 @@ document.querySelector('#form').addEventListener("submit", function(event) {
     let final = LightningDistCalc(time);
     alert("⛈️ Storm distance: " + final + "km");
   });
+
+//modal pop-up
+const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open-button');
+const closeModal = document.querySelector('.close-button');
+
+openModal.addEventListener('click', () => {
+  modal.showModal();
+})
+
+closeModal.addEventListener('click', () => {
+  modal.close();
+})

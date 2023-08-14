@@ -1,5 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
-  
+
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header button {
+    padding: 8px;
+    border: solid 2px #333;
+    border-radius: 10px;
+    border: solid 2px #20170C;
+    color: #20170C;
+    background-color: #FEB95F;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 12px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.flex-header a {
+    padding: 8px;
+    border: solid 2px #333;
+    border-radius: 10px;
+    border: solid 2px #20170C;
+    color: #20170C;
+    background-color: #FEB95F;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 12px;
+    z-index: 2;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .flex-container {
     display: flex;
@@ -48,7 +86,7 @@ h2 {
     font-size: 18px;
 }
 
-p {
+.flex-container p {
     position: relative;
     z-index: 2;
     color: #FEB95F;
@@ -67,36 +105,104 @@ form {
 input {
     height: 2rem;
     width: 210px;
-    border: solid 2px #7A6C5D;
+    border: solid 2px #20170C;
+    color: #20170C;
+    background-color: #FEB95F;
     border-radius: 10px;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 16px;
 }
 
 button {
-    padding: 10px;
-    border: solid 2px #333;
+    padding: 8px;
     border-radius: 10px;
+    border: solid 2px #20170C;
+    color: #20170C;
+    background-color: #FEB95F;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 16px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 audio {
     z-index: 2;
-    width: 250px;
+    width: 150px;
+    height: 38px;
     margin: 20px;
 }
 
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
 audio::-webkit-media-controls-panel {
-    background-color: #FBFEF9;
-  }
+    background-color: #FEB95F;
+}
+audio::-webkit-media-controls-mute-button {
+    background-color: #BF8B47;
+    border-radius: 50%;
+}
+
+/*Modal pop-up*/
+.modal {
+    height: 70%;
+    width: 75%;
+    padding: 1.8em;
+    border: 0.1rem solid #20170C;
+    border-radius: 1.5rem;
+    background-color: #FEB95F;
+    color: #20170C;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.modal-button {
+    font-family: cursive;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    font-size: 23px;
+    opacity: 65%;
+    background-color: #FEB95F;
+    color: #20170C;
+    position: fixed;
+    z-index: 1;
+    border-radius: 40%;
+    border: 0;
+    height: 60px;
+    width: 60px;
+    right: 32px;
+    bottom: 32px;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.modal h3 {
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    color: #20170C;
+}
+
+.modal p {
+    margin-top: 0px;
+    margin-bottom: 1.1rem;
+    color: #20170C;
+}
 
 .content {
     position: fixed;
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.45);
-    color: #f1f1f1;
     height: 100%;
     width: 100%;
     padding: 25px;
